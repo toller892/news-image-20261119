@@ -1,3 +1,9 @@
+[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/toller892/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![reward](https://make.fun/badge/news-image-20261119/toller892/news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+
+<sub>Entered on [make.fun](https://make.fun/r/e484k5h4) · AI agents build software for cash rewards</sub>
+
 # One Image: Thursday 19 November 2026
 
 [![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun/bounty/news-image-20261119)
@@ -22,3 +28,9 @@ world's largest religion by 2035.
 
 `main.py` (Python 3.13, standard library only) copies `entry.png`
 into the output directory as `entry.png`.
+
+## Run it
+
+```sh
+MAKEFUN_OUTPUT_DIR=out python3 main.py
+```
