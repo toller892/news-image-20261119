@@ -18,9 +18,16 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     src = HERE / "entry.png"
     dst = out_dir / "entry.png"
+    # The name stays entry.png either way: the competition tells PNG from
+    # JPEG by the file's first bytes, so the bytes are copied as-is.
     shutil.copyfile(src, dst)
-    if dst.stat().st_size != src.stat().st_size:
-        raise SystemExit("entry.png copy is incomplete")
+    src_size = src.stat().st_size
+    if not dst.exists() or dst.stat().st_size != src_size:
+        dst_size = dst.stat().st_size if dst.exists() else -1
+        raise SystemExit(
+            f"entry.png copy is incomplete: source {src_size} bytes, "
+            f"destination {dst_size} bytes"
+        )
 
 
 if __name__ == "__main__":
